@@ -1,0 +1,28 @@
+.staging__item{
+    .staging__search{
+        display: none;
+        z-index: 3;
+        position: absolute;
+        left: 40%;
+        bottom: 40%;
+    }
+    .staging__img{
+       position: relative; 
+    }
+    .staging__title{
+        position: absolute;
+        z-index: 2;
+        left: 2em;
+        top: 2em;
+    }
+    .staging__text{
+        position: absolute;
+        z-index: 2;
+        transform: rotate(-90deg);
+        top: 28em;
+    }
+}
+.staging__item:hover{
+    .staging__search{
+        display: block;}
+    }
