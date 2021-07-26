@@ -15,7 +15,8 @@ let formData ={
     name: '',
     phone: '',
     company: '',
-    email: ''
+    email: '',
+    message: ''
 }
 
 inputs[0].oninput = function (e){
@@ -79,8 +80,8 @@ btnSend.onclick = function(){
     } else {
         inputs[3].style.borderColor = 'red'
     }
-    if (formData.message.length < 20){
-        alert("Слишком мало символов!")
+    if (formData.message.length === 0){
+        alert("Введите сообщение!")
         textarea.style.borderColor = 'red'
     } else {
         textarea.style.borderColor = '#616161'
@@ -92,6 +93,3 @@ btnSend.onclick = function(){
     }
     sendFunc(statusSend)
 }
-// Сделать анимацию для появления модального окна
-// * На модальном окне мы можем сделать кнопку "ок" либо добавить крестик который должен 
-// закрывать это окно, до таймуат
